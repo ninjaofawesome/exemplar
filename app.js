@@ -8,12 +8,12 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: 'views/main.html',
+    templateUrl: 'app/views/main.html',
     controller: 'MainCtrl'
   })
   .when('/styles', {
-    templateUrl: 'views/styles.html',
-    controller: 'StylesCtrl'
+    templateUrl: 'app/views/styles.html',
+    controller: 'StyleCtrl'
   })
   .otherwise({redirectTo: '/view1'});
 }]);
