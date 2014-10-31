@@ -31,7 +31,7 @@
       "url": "https://github.com/ninjaofawesome/exemplar.git"
     }
   ],
-  "homepage": "https://exemplar.herokuapp.com/",
+  "homepage": "https://exemplar-me.herokuapp.com/",
   "engines": {
       "node": "0.10.x"
     }
