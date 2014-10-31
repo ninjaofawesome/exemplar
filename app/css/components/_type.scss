@@ -1,0 +1,12 @@
+a {
+  @include transition(color, 0.5s, ease);
+  color: $charcoal;
+  text-decoration: none !important;
+  &:hover, &:focus, &:active{
+     color: $yellow;
+  }
+  &.visited{
+    color: $charcoal;
+  }
+
+}

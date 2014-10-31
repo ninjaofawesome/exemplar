@@ -1,4 +1,37 @@
+a {
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  color: #2e3233;
+  text-decoration: none !important; }
+  a:hover, a:focus, a:active {
+    color: #e8f207; }
+  a.visited {
+    color: #2e3233; }
+
 body {
   background-color: white;
   color: #2e3233;
   font-size: 16px; }
+
+.exemplar-navbar {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #e2e3df; }
+  .exemplar-navbar .navbar-contents {
+    list-style-type: none; }
+  .exemplar-navbar .navbar-item {
+    color: #515b5e;
+    font-weight: 400;
+    display: inline;
+    padding: 0 1%; }
+    .exemplar-navbar .navbar-item.main {
+      font-size: 200%;
+      padding: 0 1% 0 0; }
+
+.exemplar-body {
+  margin-top: 50px; }
