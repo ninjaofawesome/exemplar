@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'ostrich_sans_inlineregular';
+  src: url("../fonts/ostrichsans/ostrich_sans_inline-regular-webfont.eot");
+  src: url("../fonts/ostrichsans/ostrich_sans_inline-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrichsans/ostrich_sans_inline-regular-webfont.woff2") format("woff2"), url("../fonts/ostrichsans/ostrich_sans_inline-regular-webfont.woff") format("woff"), url("../fonts/ostrichsans/ostrich_sans_inline-regular-webfont.ttf") format("truetype"), url("../fonts/ostrichsans/ostrich_sans_inline-regular-webfont.svg#ostrich_sans_inlineregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 a {
   -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
@@ -11,10 +17,41 @@ a {
   a.visited {
     color: #2e3233; }
 
+.ostrich-headline {
+  font-family: "ostrich_sans_inlineregular", arial, helvetica, sans serif;
+  color: #141414;
+  font-weight: 300;
+  font-size: 8vw; }
+  .ostrich-headline.yellow {
+    color: #e8f207; }
+  .ostrich-headline.charcoal {
+    color: #2e3233; }
+  .ostrich-headline.lightest-gray {
+    color: #e2e3df; }
+
+.serif-headline {
+  font-family: Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
+  color: #141414;
+  font-weight: 300;
+  font-size: 8vw; }
+  .serif-headline.yellow {
+    color: #e8f207; }
+  .serif-headline.charcoal {
+    color: #2e3233; }
+  .serif-headline.lightest-gray {
+    color: #e2e3df; }
+
 body {
   background-color: white;
   color: #2e3233;
   font-size: 16px; }
+
+.headline {
+  font-size: 48px; }
+
+.subheadline {
+  color: #2e3233;
+  text-decoration: underline; }
 
 .exemplar-navbar {
   position: absolute;
