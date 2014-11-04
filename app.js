@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'ExemplarControllers',
-  'ExemplarDirectives'
+  'exemplarDirectives'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider

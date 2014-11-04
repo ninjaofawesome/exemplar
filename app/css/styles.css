@@ -53,6 +53,38 @@ body {
   color: #2e3233;
   text-decoration: underline; }
 
+.side-nav {
+  background-color: #e2e3df;
+  width: 25%; }
+  .side-nav .no-pad {
+    padding: 0;
+    margin: 0; }
+  .side-nav .navbar-menu-title {
+    font-family: "ostrich_sans_inlineregular", arial, helvetica, sans serif;
+    color: #2e3233;
+    font-size: 3vw; }
+  .side-nav .bottom-row {
+    border-bottom: 1px solid #2e3233;
+    max-width: 360px;
+    margin: 0;
+    padding: 0; }
+  .side-nav .navigation, .side-nav .social-nav {
+    list-style-type: none;
+    padding-left: 0; }
+    .side-nav .navigation .navbox, .side-nav .social-nav .navbox {
+      height: 50px;
+      max-width: 375px;
+      padding: 0;
+      margin: 0;
+      line-height: 50px; }
+      .side-nav .navigation .navbox:hover, .side-nav .social-nav .navbox:hover {
+        background-color: #515b5e; }
+    .side-nav .navigation .nav-item, .side-nav .social-nav .nav-item {
+      padding-left: 5%; }
+      .side-nav .navigation .nav-item.social, .side-nav .social-nav .nav-item.social {
+        display: inline-block;
+        margin: 5%; }
+
 .exemplar-navbar {
   position: absolute;
   top: 0;
