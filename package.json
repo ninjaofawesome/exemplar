@@ -7,6 +7,9 @@
     "javascript",
     "learning"
   ],
+  "scripts": {
+      "start": "node index.js"
+  },
   "maintainers": [
     {
       "name": "Hannah Nordgren",
