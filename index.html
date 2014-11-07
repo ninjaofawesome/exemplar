@@ -14,25 +14,16 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<!-- <section class="exemplar-navbar">
-  <div class="container-fluid">
-    <div class="col-md-12">
-      <ul class="navbar-contents">
-        <li class="navbar-item main"><a href="#">Exemplar</a></li>
-        <li class="navbar-item">Link!</li>
-        <li class="navbar-item">Link!</li>
-      </ul>
-    </div>
-  </div>
-</section> -->
-
-<side-nav></side-nav>
-
 <section class="exemplar-body">
-  <div class="container">
-    <div ng-view></div>
+  <div class="container-fluid">
+
+    <side-nav></side-nav>
+
+      <div ng-view></div>
+
   </div>
-</div>
+</section>
+<sticky-footer></sticky-footer>
 
 
 

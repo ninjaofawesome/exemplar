@@ -1,112 +1,163 @@
-body{
+* {
+  margin: 0;
+}
+
+html, body{
   background-color: $white;
   color: $charcoal;
   font-size: 16px;
+  height: 100%
+}
+.exemplar-body{
+  z-index: 0;
+  min-height: 100%;
+  margin-bottom: -50px;
+
+}
+.exemplar-body:after {
+  content: "";
+  display: block;
+}
+.sticky-footer, .exemplar-body:after {
+  height: 50px;
 }
 
-.headline{
-  font-size: 48px;
-}
-
-.subheadline {
-  color: $charcoal;
-  text-decoration: underline;
-}
-
-
-.hamburger-button{
-    width: 40px;
-    height: 45px;
-    background-color: $lightest-gray;
-    border-radius: 0 10% 10% 0;
-    position: absolute;
-    top: 2%;
-    left: 0;
-    z-index: 1;
-    .ham-row{
-      margin: 10% 12.5%;
-      width: 75%;
-      border: 1.5px solid $charcoal;
-      border-radius: 2px;
-      &.top{
-        margin: 30% 12.5% 10% 12.5%;
-      }
-    }
-  }
-
-.side-nav{
-  position: fixed;
-  top: 2%;
-  left: -350px;
-  background-color: $lightest-gray;
-  width: 350px;
-  height: 100vh;
-  z-index: 1;
-  padding: 0;
-  .title-box{
-    width: 300px;
-    height: 50px;
-    display: inline-block;
-    .close-me{
-      cursor: pointer;
-      height: 35px;
-      width: 35px;
-      border: 1px solid $charcoal;
-      line-height: 35px;
-      margin: 7.5px;
-      vertical-align: center;
-      text-align: center;
-      font-family: $ostrich;
-      color: $charcoal;
-      float: right;
-    }
-    .navbar-menu-title{
-      font-family: $ostrich;
-      color: $charcoal;
-      font-size: 3em;
-      float: left;
-      margin-top: 0;
-    }
-  }
-  .bottom-row{
-    border-bottom: 1px solid $charcoal;
-    width: 300px;
+.sticky-footer{
+  z-index: 100;
+  height: 50px;
+  .footer{
     margin: 0;
     padding: 0;
-  }
-  .navigation,.social-nav{
-    list-style-type: none;
-    width: 350px;
-    padding-left: 0;
-    .navbox{
-      height: 50px;
-      width: 350px;
-      padding: 0;
-      margin: 0;
-      line-height: 50px;
-      &:hover{
-        background-color: $md-gray;
-        color: $yellow;
-      }
-    }
-    .nav-item{
-      padding-left: 5%;
+    height: 50px;
+    width: 100%;
+    background-color: $charcoal;
+    color: $lightest-gray;
+    .nav-links{
+      float: right;
+      list-style-type: none;
       font-family: $ostrich;
-      font-size: 2em;
-      &:hover{
-        color: red !important;
+      line-height: 50px;
+      display: inline;
+      padding-left: 0;
+      width: 300px;
+      .nav-item{
+        display: inline;
+        margin: 0 5%;
       }
-      &.social{
-        display: inline-block;
-        margin: 5%;
+      .footer-link{
+        color: $lightest-gray;
+        &:hover, &:active{
+          color: $yellow;
+        }
+        &:visited {
+          color: $lightest-gray;
+        }
       }
     }
-
-    // .sidebar-link{
-    //   color: $yellow;
-    //   &:hover, &:visited, &:active{
-    //      color: $yellow;
-    //   }
-    // }
   }
 }
+
+
+.navigation{
+  .hamburger-button{
+      width: 40px;
+      height: 45px;
+      background-color: $lightest-gray;
+      border-radius: 0 10% 10% 0;
+      position: absolute;
+      top: 2%;
+      left: 0;
+      z-index: 1;
+      .ham-row{
+        margin: 10% 12.5%;
+        width: 75%;
+        border: 1.5px solid $charcoal;
+        border-radius: 2px;
+        &.top{
+          margin: 30% 12.5% 10% 12.5%;
+        }
+      }
+    }
+  .side-nav{
+    position: fixed;
+    top: 2%;
+    left: -350px;
+    background-color: $lightest-gray;
+    width: 350px;
+    height: 100vh;
+    z-index: 1;
+    padding: 0;
+    .title-box{
+      width: 300px;
+      height: 50px;
+      display: inline-block;
+      .close-me{
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        border: 1px solid $charcoal;
+        line-height: 35px;
+        margin: 7.5px;
+        vertical-align: center;
+        text-align: center;
+        font-family: $ostrich;
+        color: $charcoal;
+        float: right;
+      }
+      .navbar-menu-title{
+        font-family: $ostrich;
+        color: $charcoal;
+        font-size: 3em;
+        float: left;
+        margin-top: 0;
+      }
+    }
+    .bottom-row{
+      border-bottom: 1px solid $charcoal;
+      width: 300px;
+      margin: 0;
+      padding: 0;
+    }
+    .navigation,.social-nav{
+      list-style-type: none;
+      width: 350px;
+      padding-left: 0;
+      .navbox{
+        height: 50px;
+        width: 350px;
+        padding: 0;
+        margin: 0;
+        line-height: 50px;
+        &:hover{
+          background-color: $md-gray;
+          color: $yellow;
+        }
+      }
+      .nav-item{
+        padding-left: 5%;
+        font-family: $ostrich;
+        font-size: 2em;
+        &:hover{
+          color: red !important;
+        }
+        &.social{
+          display: inline-block;
+          margin: 5%;
+        }
+      }
+
+      // .sidebar-link{
+      //   color: $yellow;
+      //   &:hover, &:visited, &:active{
+      //      color: $yellow;
+      //   }
+      // }
+    }
+  }
+
+}
+
+
+
+
+

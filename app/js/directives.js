@@ -20,3 +20,12 @@ exemplarDirectives.directive('sideNav', function(){
   }
 });
 
+exemplarDirectives.directive('stickyFooter', function(){
+  return{
+    restrict: 'E',
+    templateUrl: 'app/views/components/footer.html',
+    controller: function(){
+
+    }
+  }
+});
