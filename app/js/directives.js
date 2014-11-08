@@ -26,6 +26,7 @@ exemplarDirectives.directive('stickyFooter', function(){
     templateUrl: 'app/views/components/footer.html',
     controller: function(){
 
+
     }
   }
 });
