@@ -6,7 +6,8 @@ html, body{
   background-color: $white;
   color: $charcoal;
   font-size: 16px;
-  height: 100%
+  height: 100%;
+  width: 100%;
 }
 .exemplar-body{
   z-index: 0;
@@ -23,7 +24,7 @@ html, body{
 }
 
 .sticky-footer{
-  z-index: 100;
+  z-index: 1;
   height: 50px;
   .footer{
     margin: 0;

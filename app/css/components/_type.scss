@@ -1,5 +1,5 @@
 $ostrich: 'ostrich_sans_inlineregular', arial, helvetica, sans serif;
-$apple: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+$neutra: 'neutraface', arial, helvetica, sans serif;
 $caslon: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif;
 
 a {
@@ -15,11 +15,47 @@ a {
 
 }
 
+p {
+  text-align: justify;
+}
+
+.centered{
+  text-align: center;
+}
+
+.manifesto-text{
+  line-height: 12.5px;
+  margin: 0;
+  text-align: center;
+  &.code{
+    margin-top: 30px;
+  }
+}
+
+.link-icon{
+  font-size: 7em !important;
+  color: $charcoal;
+}
+
 .ostrich-headline{
   font-family: $ostrich;
   color: $black;
   font-weight: 300;
-  font-size: 8vw;
+  &.yellow {
+    color: $yellow;
+  }
+  &.charcoal {
+    color: $charcoal;
+  }
+  &.lightest-gray{
+    color: $lightest-gray;
+  }
+}
+
+.neutra-headline{
+  font-family: $neutra;
+  color: $black;
+  font-weight: 300;
   &.yellow {
     color: $yellow;
   }
@@ -35,7 +71,7 @@ a {
   font-family: $caslon;
   color: $black;
   font-weight: 300;
-  font-size: 8vw;
+
   &.yellow {
     color: $yellow;
   }
