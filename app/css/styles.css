@@ -95,6 +95,9 @@ html, body {
 .sticky-footer, .exemplar-body:after {
   height: 50px; }
 
+.top-spacing {
+  margin-top: 5%; }
+
 .sticky-footer {
   z-index: 1;
   height: 50px; }
@@ -214,40 +217,42 @@ html, body {
   display: inline-block;
   margin: 3px; }
 
-.hello .stretch-col {
+.hello .stretch-col, .touch .stretch-col {
   margin: 0;
   padding: 0; }
-.hello .wide {
+.hello .wide, .touch .wide {
   width: 100%;
   height: 100%;
   min-height: 750px; }
   @media all and (max-width: 767px) {
-    .hello .wide {
+    .hello .wide, .touch .wide {
       min-height: 420px; } }
   @media all and (min-width: 768px) and (max-width: 991px) {
-    .hello .wide {
+    .hello .wide, .touch .wide {
       min-height: 568px; } }
-.hello .title-box {
+.hello .title-box, .touch .title-box {
   width: 100%;
   height: 25%;
   margin-top: 25%; }
   @media all and (max-width: 767px) {
-    .hello .title-box {
+    .hello .title-box, .touch .title-box {
       margin-top: 37.5%; } }
   @media all and (min-width: 768px) and (max-width: 991px) {
-    .hello .title-box {
+    .hello .title-box, .touch .title-box {
       margin-top: 37.5%; } }
-.hello .mainpage-title {
+.hello .mainpage-title, .touch .mainpage-title {
   text-align: center;
   font-size: 10vw; }
+  .hello .mainpage-title.touch-code, .touch .mainpage-title.touch-code {
+    font-size: 6vw; }
 
-.manifesto .manifesto-box {
+.manifesto .manifesto-box, .manifesto .action-box, .actionable .manifesto-box, .actionable .action-box {
   width: 100%;
   height: 37.5%;
   margin-top: 15%; }
-.manifesto .manifest-title {
+.manifesto .manifest-title, .manifesto .act-title, .actionable .manifest-title, .actionable .act-title {
   font-size: 8vw;
   margin: 0; }
-.manifesto .manifest-subtitle {
+.manifesto .manifest-subtitle, .manifesto .act-subtitle, .actionable .manifest-subtitle, .actionable .act-subtitle {
   font-size: 6vw;
   margin: 0; }

@@ -1,4 +1,4 @@
-.hello{
+.hello, .touch{
   .stretch-col{
     margin: 0;
     padding: 0;
@@ -29,32 +29,26 @@
   .mainpage-title{
     text-align: center;
     font-size: 10vw;
-
+    &.touch-code{
+      font-size: 6vw;
+    }
   }
 
 }
 
-.manifesto{
-  .manifesto-box{
+.manifesto, .actionable{
+  .manifesto-box, .action-box{
     width: 100%;
     height: 37.5%;
     margin-top: 15%;
   }
-  .manifest-title{
+  .manifest-title, .act-title{
     font-size: 8vw;
     margin: 0;
   }
-  .manifest-subtitle{
+  .manifest-subtitle, .act-subtitle{
     font-size: 6vw;
     margin: 0;
   }
-
-}
-
-.touch{
-
-}
-
-.actionable{
 
 }
