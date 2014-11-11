@@ -85,46 +85,7 @@ html, body {
 
 .exemplar-body {
   z-index: 0;
-  min-height: 100%;
-  margin-bottom: -50px; }
-
-.exemplar-body:after {
-  content: "";
-  display: block; }
-
-.sticky-footer, .exemplar-body:after {
-  height: 50px; }
-
-.top-spacing {
-  margin-top: 5%; }
-
-.sticky-footer {
-  z-index: 1;
-  height: 50px; }
-  .sticky-footer .footer {
-    margin: 0;
-    padding: 0;
-    height: 50px;
-    width: 100%;
-    background-color: #2e3233;
-    color: #e2e3df; }
-    .sticky-footer .footer .nav-links {
-      float: right;
-      list-style-type: none;
-      font-family: "ostrich_sans_inlineregular", arial, helvetica, sans serif;
-      line-height: 50px;
-      display: inline;
-      padding-left: 0;
-      width: 300px; }
-      .sticky-footer .footer .nav-links .nav-item {
-        display: inline;
-        margin: 0 5%; }
-      .sticky-footer .footer .nav-links .footer-link {
-        color: #e2e3df; }
-        .sticky-footer .footer .nav-links .footer-link:hover, .sticky-footer .footer .nav-links .footer-link:active {
-          color: #e8f207; }
-        .sticky-footer .footer .nav-links .footer-link:visited {
-          color: #e2e3df; }
+  min-height: 100%; }
 
 .navigation .hamburger-button {
   width: 40px;
@@ -217,19 +178,73 @@ html, body {
   display: inline-block;
   margin: 3px; }
 
+.click-button {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #e2e3df;
+  color: #2e3233;
+  border: none;
+  text-shadow: none;
+  font-family: "ostrich_sans_inlineregular", arial, helvetica, sans serif;
+  font-size: 44px;
+  font-weight: 300;
+  margin: 1%; }
+  .click-button:hover, .click-button:active, .click-button:focus {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #e2e3df;
+    background-color: #2e3233; }
+  .click-button:visited {
+    color: #2e3233;
+    background-color: lightest-gray; }
+  .click-button.yellow {
+    background-color: #e8f207;
+    color: #2e3233; }
+    .click-button.yellow:hover, .click-button.yellow:active, .click-button.yellow:focus {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      background-color: #2e3233;
+      color: #e8f207; }
+    .click-button.yellow:visited {
+      color: #2e3233;
+      background-color: #e8f207; }
+  .click-button.charcoal {
+    background-color: #2e3233;
+    color: #e2e3df; }
+    .click-button.charcoal:hover, .click-button.charcoal:active, .click-button.charcoal:focus {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      background-color: #e2e3df;
+      color: #2e3233; }
+    .click-button.charcoal:visited {
+      background-color: #2e3233;
+      color: #e2e3df; }
+
+.button-space-top-fifty {
+  margin-top: 50%; }
+
+.button-space-bottom-twenty {
+  margin-bottom: 20%; }
+
 .hello .stretch-col, .touch .stretch-col {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 .hello .wide, .touch .wide {
-  width: 100%;
-  height: 100%;
-  min-height: 750px; }
-  @media all and (max-width: 767px) {
-    .hello .wide, .touch .wide {
-      min-height: 420px; } }
-  @media all and (min-width: 768px) and (max-width: 991px) {
-    .hello .wide, .touch .wide {
-      min-height: 568px; } }
+  width: 100vw;
+  height: 100vh; }
 .hello .title-box, .touch .title-box {
   width: 100%;
   height: 25%;
@@ -245,14 +260,23 @@ html, body {
   font-size: 10vw; }
   .hello .mainpage-title.touch-code, .touch .mainpage-title.touch-code {
     font-size: 6vw; }
+.hello .code-row, .touch .code-row {
+  margin-top: 20%; }
 
-.manifesto .manifesto-box, .manifesto .action-box, .actionable .manifesto-box, .actionable .action-box {
-  width: 100%;
-  height: 37.5%;
-  margin-top: 15%; }
-.manifesto .manifest-title, .manifesto .act-title, .actionable .manifest-title, .actionable .act-title {
-  font-size: 8vw;
-  margin: 0; }
-.manifesto .manifest-subtitle, .manifesto .act-subtitle, .actionable .manifest-subtitle, .actionable .act-subtitle {
-  font-size: 6vw;
-  margin: 0; }
+.manifesto, .actionable {
+  height: 100vh;
+  width: 100vw; }
+  .manifesto .manifesto-box, .manifesto .action-box, .actionable .manifesto-box, .actionable .action-box {
+    width: 100%;
+    height: 37.5%;
+    margin-top: 10%; }
+  .manifesto .manifest-title, .manifesto .act-title, .actionable .manifest-title, .actionable .act-title {
+    font-size: 6vw;
+    margin: 0; }
+  .manifesto .manifest-subtitle, .manifesto .act-subtitle, .actionable .manifest-subtitle, .actionable .act-subtitle {
+    font-size: 4.5vw;
+    margin: 0; }
+    .manifesto .manifest-subtitle.small, .manifesto .act-subtitle.small, .actionable .manifest-subtitle.small, .actionable .act-subtitle.small {
+      font-size: 4.5vw; }
+  .manifesto .top-spacing, .actionable .top-spacing {
+    margin-top: 2.5%; }

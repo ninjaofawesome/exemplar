@@ -6,6 +6,7 @@
     transition: $transition-property $transition-time $method;
 }
 
+
 @mixin breakpoint($point) {
   @if $point == mobile {
     @media all and (max-width: $screen-xs-max) { @content; }

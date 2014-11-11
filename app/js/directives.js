@@ -20,16 +20,7 @@ exemplarDirectives.directive('sideNav', function(){
   }
 });
 
-exemplarDirectives.directive('stickyFooter', function(){
-  return{
-    restrict: 'E',
-    templateUrl: 'app/views/components/footer.html',
-    controller: function(){
 
-
-    }
-  }
-});
 exemplarDirectives.directive('myBackgroundImage', function () {
   return function (scope, element, attrs) {
     element.css({
@@ -40,6 +31,14 @@ exemplarDirectives.directive('myBackgroundImage', function () {
     });
   };
 });
+
+exemplarDirectives.directive('clickMove', [$document, function($document){
+    return function(scope, element, attrs){
+
+    }
+}]);
+
+
 
 
 
