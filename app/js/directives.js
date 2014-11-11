@@ -32,11 +32,15 @@ exemplarDirectives.directive('myBackgroundImage', function () {
   };
 });
 
-exemplarDirectives.directive('clickMove', [$document, function($document){
+exemplarDirectives.directive('clickMove', function($document){
     return function(scope, element, attrs){
 
+      element.on('click', function(event){
+        //put stuff here for button movement
+      });
+
     }
-}]);
+});
 
 
 
