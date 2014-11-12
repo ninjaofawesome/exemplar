@@ -237,6 +237,8 @@ html, body {
 
 .button-space-bottom-twenty {
   margin-bottom: 20%; }
+  .button-space-bottom-twenty.embrace {
+    margin: 0 auto 20% auto; }
 
 .hello .stretch-col, .touch .stretch-col {
   margin: 0;
@@ -262,6 +264,10 @@ html, body {
     font-size: 6vw; }
 .hello .code-row, .touch .code-row {
   margin-top: 20%; }
+.hello .button-box, .touch .button-box {
+  width: 400px;
+  height: 150px;
+  text-align: center; }
 
 .manifesto, .actionable {
   height: 100vh;

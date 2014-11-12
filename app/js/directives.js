@@ -38,9 +38,7 @@ exemplarDirectives.directive('clickMove', function($document){
       element.on('click', function(event){
         var destination = attrs.id;
         var offset = $('.' + destination + '-box').offset().top;
-
         $('html, body').animate({
-
           scrollTop: offset
         }, 1000);
       });
