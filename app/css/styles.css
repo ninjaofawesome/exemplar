@@ -233,7 +233,7 @@ html, body {
       color: #e2e3df; }
 
 .button-space-top-fifty {
-  margin-top: 50%; }
+  margin: 37.5% auto 0 auto; }
 
 .button-space-bottom-twenty {
   margin-bottom: 20%; }
@@ -251,12 +251,12 @@ html, body {
   width: 100%;
   height: 25%;
   margin-top: 25%; }
-  @media all and (max-width: 767px) {
-    .hello .title-box, .touch .title-box {
-      margin-top: 37.5%; } }
   @media all and (min-width: 768px) and (max-width: 991px) {
     .hello .title-box, .touch .title-box {
-      margin-top: 37.5%; } }
+      margin-top: 30%; } }
+  @media all and (max-width: 767px) {
+    .hello .title-box, .touch .title-box {
+      margin-top: 40%; } }
 .hello .mainpage-title, .touch .mainpage-title {
   text-align: center;
   font-size: 10vw; }
@@ -264,6 +264,8 @@ html, body {
     font-size: 6vw; }
 .hello .code-row, .touch .code-row {
   margin-top: 20%; }
+.hello .center-content, .touch .center-content {
+  text-align: center; }
 .hello .button-box, .touch .button-box {
   width: 400px;
   height: 150px;
