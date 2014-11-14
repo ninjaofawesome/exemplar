@@ -80,6 +80,7 @@ html, body {
   background-color: white;
   color: #2e3233;
   font-size: 16px;
+  line-height: 1.2em;
   height: 100%;
   width: 100%; }
 
@@ -164,7 +165,7 @@ html, body {
 
 .icons-box {
   width: 420px;
-  height: 420px;
+  height: 400px;
   margin: 0 auto; }
 
 .icon-row {
@@ -172,7 +173,7 @@ html, body {
 
 .icon-box {
   width: 200px;
-  height: 200px;
+  height: 175px;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
@@ -277,7 +278,7 @@ html, body {
   .manifesto .manifesto-box, .manifesto .action-box, .actionable .manifesto-box, .actionable .action-box {
     width: 100%;
     height: 37.5%;
-    margin-top: 10%; }
+    margin-top: 2%; }
   .manifesto .manifest-title, .manifesto .act-title, .actionable .manifest-title, .actionable .act-title {
     font-size: 6vw;
     margin: 0; }
