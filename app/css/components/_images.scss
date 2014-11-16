@@ -1,18 +1,24 @@
   .icons-box{
     width: 420px;
-    height: 400px;
+    height: 100%;
     margin: 0 auto;
   }
 
-  .icon-row{
-    margin: 0;
+  .icon-box{
+    float: none;
+    margin: 2% auto;
+    text-align: center;
   }
 
-  .icon-box{
-    width: 200px;
-    height: 175px;
-    text-align: center;
-    vertical-align: middle;
-    display: inline-block;
-    margin: 3px;
+.link-icon{
+  color: $charcoal;
+  &.last{
+    font-size: 500%;
+    @include breakpoint(tablet){
+      font-size: 400%;
+    }
+    @include breakpoint(mobile){
+      font-size: 350%;
+    }
   }
+}

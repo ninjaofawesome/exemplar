@@ -12,6 +12,7 @@
   font-size: 44px;
   font-weight: 300;
   margin: 1%;
+  cursor: pointer;
   &:hover, &:active, &:focus{
     @include transition(all, 0.5s, ease);
     color: $lightest-gray;
@@ -58,4 +59,8 @@
   &.embrace{
     margin: 0 auto 20% auto;
   }
+}
+
+.button-space-top-bottom{
+  margin: 20% auto;
 }

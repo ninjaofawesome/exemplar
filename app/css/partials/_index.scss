@@ -1,4 +1,7 @@
 .hello, .touch{
+  height: 100vh;
+  width: 100vw;
+  min-height: 420px;
   .stretch-col{
     margin: 0;
     padding: 0;
@@ -36,6 +39,8 @@
     width: 400px;
     height: 150px;
     text-align: center;
+    float: none;
+    margin: 0 auto;
   }
 
 }
@@ -43,10 +48,10 @@
 .manifesto, .actionable{
   height: 100vh;
   width: 100vw;
-  .manifesto-box, .action-box{
+  .manifesto-box-text, .action-box{
     width: 100%;
     height: 37.5%;
-    margin-top: 2%;
+    margin-top: 2.5%;
   }
   .manifest-title, .act-title{
     font-size: 6vw;
