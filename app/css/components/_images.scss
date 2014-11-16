@@ -22,3 +22,18 @@
     }
   }
 }
+
+.wide {
+    width: 100vw;
+    height: 100vh;
+    &.interior-images{
+      height: 40vh;
+    }
+}
+
+.mugshot-box{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid $charcoal;
+}

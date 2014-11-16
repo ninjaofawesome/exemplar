@@ -1,0 +1,17 @@
+.think-intro, .think-content{
+  height: 100vh;
+  width: 100vw;
+  .content-box{
+    height: auto;
+    width: 100%;
+    min-height: 200px;
+  }
+  .top-spacing{
+    margin-top: 5%;
+  }
+  .topic-box{
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}

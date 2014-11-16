@@ -31,6 +31,36 @@ p {
 .centered {
   text-align: center; }
 
+.v-centered {
+  vertical-align: middle;
+  margin: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.emphasis-text {
+  font-size: 5vw;
+  line-height: 5vw; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .emphasis-text {
+      font-size: 6vw;
+      line-height: 6vw; } }
+  @media all and (max-width: 767px) {
+    .emphasis-text {
+      font-size: 7vw;
+      line-height: 7vw; } }
+  .emphasis-text.xl {
+    font-size: 7vw;
+    line-height: 7vw; }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+      .emphasis-text.xl {
+        font-size: 8vw;
+        line-height: 8vw; } }
+    @media all and (max-width: 767px) {
+      .emphasis-text.xl {
+        font-size: 9vw;
+        line-height: 9vw; } }
+
 .manifesto-text {
   line-height: 12.5px;
   margin: 0;
@@ -85,6 +115,13 @@ html, body {
 .exemplar-body {
   z-index: 0;
   min-height: 100%; }
+
+.stretch-col {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  .stretch-col.interior-pages {
+    z-index: 1; }
 
 .navigation .hamburger-button {
   width: 40px;
@@ -207,6 +244,18 @@ html, body {
       .link-icon.last {
         font-size: 350%; } }
 
+.wide {
+  width: 100vw;
+  height: 100vh; }
+  .wide.interior-images {
+    height: 40vh; }
+
+.mugshot-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid #2e3233; }
+
 .click-button {
   width: 200px;
   height: 50px;
@@ -272,18 +321,13 @@ html, body {
 
 .button-space-top-bottom {
   margin: 20% auto; }
+  .button-space-top-bottom.ten {
+    margin: 10% auto; }
 
 .hello, .touch {
   height: 100vh;
   width: 100vw;
   min-height: 420px; }
-  .hello .stretch-col, .touch .stretch-col {
-    margin: 0;
-    padding: 0;
-    position: relative; }
-  .hello .wide, .touch .wide {
-    width: 100vw;
-    height: 100vh; }
   .hello .title-box, .touch .title-box {
     width: 100%;
     height: 25%;
@@ -327,3 +371,17 @@ html, body {
       font-size: 4.5vw; }
   .manifesto .top-spacing, .actionable .top-spacing {
     margin-top: 2.5%; }
+
+.think-intro, .think-content {
+  height: 100vh;
+  width: 100vw; }
+  .think-intro .content-box, .think-content .content-box {
+    height: auto;
+    width: 100%;
+    min-height: 200px; }
+  .think-intro .top-spacing, .think-content .top-spacing {
+    margin-top: 5%; }
+  .think-intro .topic-box, .think-content .topic-box {
+    height: 100px;
+    width: 100%;
+    margin-top: 10px; }

@@ -16,6 +16,15 @@ html, body{
 
 }
 
+.stretch-col{
+  margin: 0;
+  padding: 0;
+  position: relative;
+    &.interior-pages{
+      z-index: 1;
+    }
+}
+
 .navigation{
   .hamburger-button{
     @include breakpoint(tablet){

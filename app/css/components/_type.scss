@@ -26,8 +26,47 @@ p {
   text-align: justify;
 }
 
+///////////////////////////////////////////////////////////////////////////////
+////////////////////////Alignment and spacing//////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
 .centered{
   text-align: center;
+}
+
+//this needs to have the line height set too!
+.v-centered{
+  vertical-align: middle;
+  margin: 0;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.emphasis-text{
+  font-size: 5vw;
+  line-height: 5vw;
+  @include breakpoint(tablet){
+    font-size: 6vw;
+    line-height: 6vw;
+  }
+  @include breakpoint(mobile){
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+  &.xl {
+    font-size: 7vw;
+    line-height: 7vw;
+    @include breakpoint(tablet){
+      font-size: 8vw;
+      line-height: 8vw;
+    }
+    @include breakpoint(mobile){
+      font-size: 9vw;
+      line-height: 9vw;
+    }
+  }
 }
 
 .manifesto-text{
