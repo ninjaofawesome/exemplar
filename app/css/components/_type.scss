@@ -13,6 +13,13 @@ a {
     color: $charcoal;
   }
 
+  &.low-profile-link{
+    &:hover, &:focus, &:active{
+       color: $charcoal;
+    }
+
+  }
+
 }
 
 p {

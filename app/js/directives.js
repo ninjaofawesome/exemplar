@@ -21,6 +21,7 @@ exemplarDirectives.directive('sideNav', function(){
 });
 
 
+
 exemplarDirectives.directive('myBackgroundImage', function () {
   return function (scope, element, attrs) {
     element.css({

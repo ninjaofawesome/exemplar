@@ -22,6 +22,8 @@ a {
     color: #e8f207; }
   a.visited {
     color: #2e3233; }
+  a.low-profile-link:hover, a.low-profile-link:focus, a.low-profile-link:active {
+    color: #2e3233; }
 
 p {
   text-align: justify; }
@@ -89,17 +91,42 @@ html, body {
   height: 45px;
   background-color: #e2e3df;
   border-radius: 0 10% 10% 0;
-  position: absolute;
+  position: fixed;
   top: 2%;
   left: 0;
   z-index: 1; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .navigation .hamburger-button {
+      display: none; } }
+  @media all and (max-width: 767px) {
+    .navigation .hamburger-button {
+      display: none; } }
   .navigation .hamburger-button .ham-row {
     margin: 10% 12.5%;
     width: 75%;
     border: 1.5px solid #2e3233;
     border-radius: 2px; }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+      .navigation .hamburger-button .ham-row {
+        display: none; } }
+    @media all and (max-width: 767px) {
+      .navigation .hamburger-button .ham-row {
+        display: none; } }
     .navigation .hamburger-button .ham-row.top {
       margin: 30% 12.5% 10% 12.5%; }
+.navigation .sticky-logo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 45px;
+  width: 125px;
+  z-index: 1; }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .navigation .sticky-logo {
+      display: none; } }
+  @media all and (max-width: 767px) {
+    .navigation .sticky-logo {
+      display: none; } }
 .navigation .side-nav {
   position: fixed;
   top: 2%;
